@@ -1,0 +1,999 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cons{
+   margin-top: 10rem;
+   margin-bottom: 10rem;
+   width: 70vw;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.content{
+    height: 60vh;
+    width: 60vw;
+    background-color: #fff;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(184, 180, 180);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.content_1{
+    width: 50%;
+    
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 5px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 3rem;
+}
+.title span{
+    margin-top: .5rem;
+}
+.bill_area{
+    margin-bottom: 10px;
+}
+
+.input-task{
+    width: 80%;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+}
+.input-task input{
+    width: 100px;
+    border: transparent;
+    background-color: transparent;
+}
+.input-task input:active,.input-task input:focus{
+    border: transparent;
+    outline: none;
+}
+.input-task:hover{
+    border: 1px solid hsl(185, 41%, 84%);
+}
+.dis_ar{
+    margin-bottom: 10px;
+}
+.discount_area{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.discount_area button{
+    padding: 5px 20px;
+    text-align: center;
+    margin-bottom: 1em;
+    border: transparent;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    margin-right: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+}
+.discount_area button:active{
+    background-color:hsl(185, 41%, 84%);
+    color: #000;
+}
+.discount_area #five_per{
+    padding: 5px 25px;
+}
+.discount_area input{
+    width: 69px;
+    padding: 5px 20px;
+    margin-top: -1em;
+    background-color: hsl(189, 41%, 97%);
+    border: transparent;
+}
+.discount_area input:active,.discount_area input:focus{
+    border: 1px solid hsl(185, 41%, 84%);
+    outline:  1px solid hsl(185, 41%, 84%);
+    border-radius: 5px;
+}
+.num-people{
+    width: 80%;
+    background-color: hsl(189, 41%, 97%);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
+}
+.num-people:hover{
+    border: 1px solid hsl(185, 41%, 84%);
+}
+.num-people input{
+    border: transparent;
+    width: 100px;
+    background-color: transparent;
+}
+.num-people input:active,.num-people input:focus{
+    border: transparent;
+    outline: none;
+}
+p{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    color: hsl(186, 14%, 43%);
+}
+.content_2{
+    width: 50%;
+    background-color: hsl(184, 70%, 17%);
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.amt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.amt p{
+    display: flex;
+    flex-direction: column;
+}
+.total_amt{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.total_amt p{
+    display: flex;
+    flex-direction: column;
+}
+.content_2 #reset{
+    padding: 10px 0px;
+    background-color: hsl(185, 41%, 84%);
+    color: #000;
+    font-weight: 700;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content_2 #reset:active{
+    background-color: hsl(185, 22%, 60%);
+    color: #fff;
+} 
+
+/*1200px*/
+@media(max-width:1200px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(185, 41%, 84%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cons{
+       margin-top: 10rem;
+       margin-bottom: 10rem;
+       width: 70vw;
+       height: 80vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .content{
+        height: 60vh;
+        width: 60vw;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(184, 180, 180);
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .content_1{
+        width: 50%;
+        
+    }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 5px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(186, 14%, 43%);
+        margin-bottom: 3rem;
+    }
+    .title span{
+        margin-top: .5rem;
+    }
+    .bill_area{
+        margin-bottom: 10px;
+    }
+    
+    .input-task{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .input-task input{
+        width: 100px;
+        border: transparent;
+        background-color: transparent;
+    }
+    .input-task input:active,.input-task input:focus{
+        border: transparent;
+        outline: none;
+    }
+    .input-task:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .dis_ar{
+        margin-bottom: 10px;
+    }
+    .discount_area{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .discount_area button{
+        padding: 5px 20px;
+        text-align: center;
+        margin-bottom: 1em;
+        border: transparent;
+        border-radius: 5px;
+        background-color: hsl(183, 100%, 15%);
+        margin-right: 5px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .discount_area button:active{
+        background-color:hsl(185, 41%, 84%);
+        color: #000;
+    }
+    .discount_area #five_per{
+        padding: 5px 25px;
+    }
+    .discount_area input{
+        width: 69px;
+        padding: 5px 20px;
+        margin-top: -1em;
+        background-color: hsl(189, 41%, 97%);
+        border: transparent;
+    }
+    .discount_area input:active,.discount_area input:focus{
+        border: 1px solid hsl(185, 41%, 84%);
+        outline:  1px solid hsl(185, 41%, 84%);
+        border-radius: 5px;
+    }
+    .num-people{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .num-people:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .num-people input{
+        border: transparent;
+        width: 100px;
+        background-color: transparent;
+    }
+    .num-people input:active,.num-people input:focus{
+        border: transparent;
+        outline: none;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%);
+    }
+    .content_2{
+        width: 50%;
+        background-color: hsl(184, 70%, 17%);
+        border-radius: 10px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .total_amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .total_amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_2 button{
+        padding: 10px 0px;
+        background-color: hsl(185, 41%, 84%);
+        color: #000;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        letter-spacing: 2px;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .content_2 button:active{
+        background-color: hsl(185, 22%, 60%);
+        color: #fff;
+    } 
+}
+
+/*992px*/
+@media(max-width:992px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(185, 41%, 84%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cons{
+       margin-top: 10rem;
+       margin-bottom: 10rem;
+       width: 70vw;
+       height: 80vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .content{
+        height: 60vh;
+        width: 60vw;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(184, 180, 180);
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .content_1{
+        width: 50%;
+        
+    }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 5px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(186, 14%, 43%);
+        margin-bottom: 3rem;
+    }
+    .title span{
+        margin-top: .5rem;
+    }
+    .bill_area{
+        margin-bottom: 10px;
+    }
+    
+    .input-task{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .input-task input{
+        width: 100px;
+        border: transparent;
+        background-color: transparent;
+    }
+    .input-task input:active,.input-task input:focus{
+        border: transparent;
+        outline: none;
+    }
+    .input-task:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .dis_ar{
+        margin-bottom: 10px;
+    }
+    .discount_area{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .discount_area button{
+        padding: 5px 20px;
+        text-align: center;
+        margin-bottom: 1em;
+        border: transparent;
+        border-radius: 5px;
+        background-color: hsl(183, 100%, 15%);
+        margin-right: 5px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .discount_area button:active{
+        background-color:hsl(185, 41%, 84%);
+        color: #000;
+    }
+    .discount_area #five_per{
+        padding: 5px 25px;
+    }
+    .discount_area input{
+        width: 69px;
+        padding: 5px 20px;
+        margin-top: -1em;
+        background-color: hsl(189, 41%, 97%);
+        border: transparent;
+    }
+    .discount_area input:active,.discount_area input:focus{
+        border: 1px solid hsl(185, 41%, 84%);
+        outline:  1px solid hsl(185, 41%, 84%);
+        border-radius: 5px;
+    }
+    .num-people{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .num-people:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .num-people input{
+        border: transparent;
+        width: 100px;
+        background-color: transparent;
+    }
+    .num-people input:active,.num-people input:focus{
+        border: transparent;
+        outline: none;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%);
+    }
+    .content_2{
+        width: 50%;
+        background-color: hsl(184, 70%, 17%);
+        border-radius: 10px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .total_amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .total_amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_2 button{
+        padding: 10px 0px;
+        background-color: hsl(185, 41%, 84%);
+        color: #000;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        letter-spacing: 2px;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .content_2 button:active{
+        background-color: hsl(185, 22%, 60%);
+        color: #fff;
+    } 
+}
+
+/*768px*/
+@media(max-width:768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(185, 41%, 84%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cons{
+       margin-top: 10rem;
+       margin-bottom: 10rem;
+       width: 80vw;
+       height: 80vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .content{
+        height: 60vh;
+        width: 80vw;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(184, 180, 180);
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .content_1{
+        width: 50%;
+        
+    }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 5px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(186, 14%, 43%);
+        margin-bottom: 3rem;
+    }
+    .title span{
+        margin-top: .5rem;
+    }
+    .bill_area{
+        margin-bottom: 10px;
+    }
+    
+    .input-task{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .input-task input{
+        width: 100px;
+        border: transparent;
+        background-color: transparent;
+    }
+    .input-task input:active,.input-task input:focus{
+        border: transparent;
+        outline: none;
+    }
+    .input-task:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .dis_ar{
+        margin-bottom: 10px;
+    }
+    .discount_area{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .discount_area button{
+        padding: 5px 20px;
+        text-align: center;
+        margin-bottom: 1em;
+        border: transparent;
+        border-radius: 5px;
+        background-color: hsl(183, 100%, 15%);
+        margin-right: 5px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .discount_area button:active{
+        background-color:hsl(185, 41%, 84%);
+        color: #000;
+    }
+    .discount_area #five_per{
+        padding: 5px 25px;
+    }
+    .discount_area input{
+        width: 69px;
+        padding: 5px 20px;
+        margin-top: -1em;
+        background-color: hsl(189, 41%, 97%);
+        border: transparent;
+    }
+    .discount_area input:active,.discount_area input:focus{
+        border: 1px solid hsl(185, 41%, 84%);
+        outline:  1px solid hsl(185, 41%, 84%);
+        border-radius: 5px;
+    }
+    .num-people{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .num-people:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .num-people input{
+        border: transparent;
+        width: 100px;
+        background-color: transparent;
+    }
+    .num-people input:active,.num-people input:focus{
+        border: transparent;
+        outline: none;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%);
+    }
+    .content_2{
+        width: 50%;
+        background-color: hsl(184, 70%, 17%);
+        border-radius: 10px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .total_amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .total_amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_2 button{
+        padding: 10px 0px;
+        background-color: hsl(185, 41%, 84%);
+        color: #000;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        letter-spacing: 2px;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .content_2 button:active{
+        background-color: hsl(185, 22%, 60%);
+        color: #fff;
+    } 
+}
+
+/*576px*/
+@media(max-width:576px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        background-color: hsl(185, 41%, 84%);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
+    .cons{
+       margin-top: 2rem;
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    
+       
+      
+    }
+    #title{
+        margin-bottom: 50px;
+        margin-top: 3rem;
+    }
+    .mob{
+        height: 80vh;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 1rem;
+        border-radius: 20px 20px 0px 0px;
+       
+    }
+    .content{
+        height: 100vh;
+        width: 100%;
+        background-color: #fff;
+       
+        border-radius: 30px 30px 0px 0px;
+        box-shadow: none;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        
+    
+    }
+    .content_1{
+        width: 90%;
+        
+    }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 5px;
+        font-family: 'Space Mono', monospace;
+        font-weight: 700;
+        color: hsl(186, 14%, 43%);
+        margin-bottom: 3rem;
+    }
+    .title span{
+        margin-top: .5rem;
+    }
+    .bill_area{
+        margin-bottom: 60px;
+    }
+    
+    .input-task{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .input-task input{
+        width: 100px;
+        border: transparent;
+        background-color: transparent;
+    }
+    .input-task input:active,.input-task input:focus{
+        border: transparent;
+        outline: none;
+    }
+    .input-task:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .dis_ar{
+        margin-bottom: 60px;
+    }
+    .discount_area{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .discount_area button{
+        padding: 5px 40px;
+        text-align: center;
+        margin-bottom: 1em;
+        border: transparent;
+        border-radius: 5px;
+        background-color: hsl(183, 100%, 15%);
+        margin-right: 5px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+    }
+    .discount_area button:active{
+        background-color:hsl(185, 41%, 84%);
+        color: #000;
+    }
+    .discount_area #five_per{
+        padding: 5px 45px;
+    }
+    .discount_area input{
+        width: 109px;
+        padding: 5px 20px;
+        margin-top: -1em;
+        background-color: hsl(189, 41%, 97%);
+        border: transparent;
+    }
+    .discount_area input:active,.discount_area input:focus{
+        border: 1px solid hsl(185, 41%, 84%);
+        outline:  1px solid hsl(185, 41%, 84%);
+        border-radius: 5px;
+    }
+    .num-people{
+        width: 80%;
+        background-color: hsl(189, 41%, 97%);
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: 'Space Mono', monospace;
+        cursor: pointer;
+        margin-bottom: 60px;
+    }
+    .num-people:hover{
+        border: 1px solid hsl(185, 41%, 84%);
+    }
+    .num-people input{
+        border: transparent;
+        width: 100px;
+        background-color: transparent;
+    }
+    .num-people input:active,.num-people input:focus{
+        border: transparent;
+        outline: none;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        color: hsl(186, 14%, 43%);
+    }
+    .content_2{
+        width: 90%;
+        background-color: hsl(184, 70%, 17%);
+        border-radius: 10px;
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 50px;
+       
+       
+    }
+    .amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .total_amt{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .total_amt p{
+        display: flex;
+        flex-direction: column;
+    }
+    .content_2 button{
+        padding: 10px 0px;
+        background-color: hsl(185, 41%, 84%);
+        color: #000;
+        font-weight: 700;
+        font-family: 'Space Mono', monospace;
+        letter-spacing: 2px;
+        border: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .content_2 button:active{
+        background-color: hsl(185, 22%, 60%);
+        color: #fff;
+    } 
+}   

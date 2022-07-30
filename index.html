@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="images/x-icon" href="./images/budget.png">
+</head>
+<body>
+    <div class="container">
+     
+        <div class="cons">
+          <p class="title" >SPLI<span>TTER</span></p>
+         
+            <div class="mob">
+              <div class="content">
+                <div class="content_1">
+                  <div class="bill_area">
+                    <label for="bill" style="font-size: 13px;
+                    font-weight: 700;
+                    font-family: 'Space Mono', monospace;
+                    color: hsl(186, 14%, 43%);">Bill</label>
+                    <div class="input-task" style="margin-top: 10px;">
+                      <span>$</span>
+                      <input type="text" placeholder="" id="amt_mod">
+                    </div>
+                    
+                  </div>
+                  <div class="dis_ar">
+                    <p style="margin-bottom: 10px;">Select tip %</p>
+                    <div class="discount_area">
+                      <button id="five_per">5%</button>
+                      <button id="ten_per">10%</button>
+                      <button id="fif_per">15%</button>
+                      <button id="twe_per">25%</button>
+                      <button id="fitf_per">50%</button>
+                      <input type="text" placeholder="custom" id="custom">
+                    </div>
+                  </div>
+                 
+                  <p style="margin-bottom: 10px;">Number of people</p>
+                  <div class="num-people">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" id="no_person">
+                  </div>
+                </div>
+               
+                <div class="content_2">
+                  <div class="dsh">
+                    <div class="amt">
+                      <p style="color: #fff;font-size: 12px; letter-spacing: 2px;">Tip amount <span style="color: hsl(186, 14%, 43%);">/person</span></p>
+                      <p style="font-size: 34px;color: hsl(184, 14%, 56%);" id="tip_amt">$00.0</p>
+                    </div>
+                    <div class="total_amt">
+                      <p  style="color: #fff;font-size: 12px; letter-spacing: 2px;">Total amount <span style="color: hsl(186, 14%, 43%);">/person</span></p>
+                      <p style="font-size: 34px;color: hsl(184, 14%, 56%);" id="total_amt">$00.0</p>
+                    </div>
+                  </div>
+                
+                 <input type="button" id="reset" value="RESET">
+                </div>
+            </div>
+            </div>
+        
+          
+         
+        </div>
+     
+      
+      
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
